@@ -16,11 +16,12 @@ export default {
       list: []
     }
   },
-  async mounted() {
-    let self = this
+  async asyncData() {
     let { status, data: { list } } = await axios.get('http://localhost:3000/city/list')
     if (status === 200) {
-      self.list = list
+      return {
+        list
+      }
     }
   }
 }
