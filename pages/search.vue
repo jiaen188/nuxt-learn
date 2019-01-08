@@ -7,6 +7,9 @@
     <ul>
       <li v-for="(item, index) in $store.state.city.list" :key="index">{{item}}</li>
     </ul>
+    <ul>
+      <li v-for="(item, index) in $store.state.navbar.app" :key="index">{{item}}</li>
+    </ul>
   </div>
 </template>
 

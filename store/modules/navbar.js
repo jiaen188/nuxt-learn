@@ -1,5 +1,5 @@
 const state = () => ({
-  app: []
+  app: ['1', '2']
 })
 
 const mutations = {
